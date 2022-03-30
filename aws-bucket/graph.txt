@@ -1,0 +1,9 @@
+strict digraph {
+    Resource0 [label="urn:pulumi:dev::aws-test::pulumi:providers:aws::default_5_1_0"];
+    Resource1 [label="urn:pulumi:dev::aws-test::aws:s3/bucket:Bucket::my-bucket"];
+    Resource1 -> Resource2 [color = "#AA6639"];
+    Resource1 -> Resource3 [color = "#246C60", label = "bucket"];
+    Resource3 [label="urn:pulumi:dev::aws-test::aws:s3/bucketObject:BucketObject::index.html"];
+    Resource3 -> Resource2 [color = "#AA6639"];
+    Resource2 [label="urn:pulumi:dev::aws-test::pulumi:pulumi:Stack::aws-test-dev"];
+}
